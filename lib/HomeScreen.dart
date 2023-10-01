@@ -21,24 +21,105 @@ class HomeScreen extends StatelessWidget {
         ],
 
       ),
-      body: Row(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 10, right: 60),
-            child: Center(child: Text('data')),
-          ),
+      body: Column(children: [
 
-          Center(child: Text('data')),
-          SizedBox(
-            width: 60,
+        Align(
+          alignment: Alignment.center,
+          child: Container(
+            height: 100,
+            width: 200,
+            padding: EdgeInsets.all(20),
+            margin: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.black, width: 4),
+              borderRadius: BorderRadius.circular(8),
+              boxShadow: [
+                new BoxShadow(
+                  color: Colors.orange,
+                  offset: new Offset(6.0, 6.0),
+                )
+              ],
+            ),
+            child: Align(alignment: Alignment.center, child: Text("Babgladesh", style: TextStyle(fontSize: 20),)),
+
           ),
-          Center(child: Text('data')),
-          SizedBox(
-            width: 60,
+        ),
+
+        Align(
+          alignment: Alignment.topRight,
+          child: Container(
+            height: 100,
+            width: 200,
+            padding: EdgeInsets.all(20),
+            margin: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.black, width: 4),
+              borderRadius: BorderRadius.circular(8),
+              boxShadow: [
+                new BoxShadow(
+                  color: Colors.orange,
+                  offset: new Offset(6.0, 6.0),
+                )
+              ],
+            ),
+            child: Align(alignment: Alignment.center, child: Text("Babgladesh", style: TextStyle(fontSize: 20),)),
+
           ),
-          Center(child: Text('data')),
-        ],
+          
+        ),
+        ElevatedButton(onPressed: () {}, child: Text('Save')),
+
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            height: 100,
+            width: 200,
+            padding: EdgeInsets.all(20),
+            margin: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.black, width: 4),
+              borderRadius: BorderRadius.circular(8),
+              boxShadow: [
+                new BoxShadow(
+                  color: Colors.orange,
+                  offset: new Offset(6.0, 6.0),
+                )
+              ],
+            ),
+            child: Align(alignment: Alignment.center, child: Text("Babgladesh", style: TextStyle(fontSize: 20),)),
+
+          ),
+        ),
+
+        Align(
+          alignment: Alignment.bottomRight,
+          child: Container(
+            height: 100,
+            width: 200,
+            padding: EdgeInsets.all(20),
+            margin: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.black, width: 4),
+              borderRadius: BorderRadius.circular(8),
+              boxShadow: [
+                new BoxShadow(
+                  color: Colors.orange,
+                  offset: new Offset(6.0, 6.0),
+                )
+              ],
+            ),
+            child: Align(alignment: Alignment.center, child: Text("Babgladesh", style: TextStyle(fontSize: 20),)),
+
+          ),
+        ),
+      ],
       ),
+
+
+
+
+
+
       drawer: Drawer(
        // backgroundColor: Colors.orange,
         child: ListView(
@@ -117,7 +198,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           )
-
         ],),
       ),
       //bottomNavigationBar: ,
