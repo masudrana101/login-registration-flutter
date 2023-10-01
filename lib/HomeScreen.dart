@@ -40,9 +40,36 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       drawer: Drawer(
-        child: ListView(children: [
+       // backgroundColor: Colors.orange,
+        child: ListView(
+          children: [
+            UserAccountsDrawerHeader(
+                //currentAccountPicture: Image.network('https://www.istockphoto.com/photo/man-taking-a-picture-with-camera-gm889516940-246594179'),
+                accountName: Text('Masud'),
+                accountEmail: Text('masud.cse.sub@gmail.com')
+            ),
+            InkWell(
+              onTap: () {},
+              child: ListTile(
+                //leading: Icon(Icons.login),
+                title: Text('Login'),
+               // subtitle: Text('Login the page'),
+                trailing: Icon(Icons.login),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+             // borderRadius: BorderRadius.circular(30),
+              child: ListTile(
+                //leading: Icon(Icons.logout),
+                title: Text('Logout'),
+                //subtitle: Text('Logout the page'),
+                trailing: Icon(Icons.logout),
+              ),
+            ),
+
           Padding(
-            padding: const EdgeInsets.only(left: 20, top:20),
+            padding: const EdgeInsets.only(left: 20, top:40),
             child: Card(
               child: Text(
                 'Profile',
@@ -81,7 +108,7 @@ class HomeScreen extends StatelessWidget {
 
           Padding(
             padding: const EdgeInsets.only(left: 20, top:20),
-            child: Container(
+            child: Card(
               child: Text(
                 'Adress',
                 style: TextStyle(
